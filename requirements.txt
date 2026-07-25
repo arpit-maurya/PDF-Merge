@@ -1,0 +1,18 @@
+# PDF Pair Merger - runtime dependencies
+#
+# Install with:
+#   pip install -r requirements.txt
+
+# Core PDF engine (page reading, vector page embedding, saving).
+PyMuPDF>=1.23.0
+
+# Modern dark-themed Tkinter widget set used for the GUI.
+customtkinter>=5.2.0
+
+# Optional: enables drag-and-drop of PDF files onto the window.
+# The application detects at startup whether this package is installed and
+# usable, and degrades gracefully (drag & drop simply stays disabled,
+# "+ Add PDFs" still works) if it is missing or fails to load on a given
+# platform. You may safely delete this line if you do not need drag & drop
+# or if it fails to install on your system.
+tkinterdnd2>=0.3.0
